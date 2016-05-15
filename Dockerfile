@@ -146,7 +146,7 @@ RUN cp /etc/apk/repositories /etc/apk/repositories.orig \
         schroedinger \
         gavl \
         frei0r \
-        aacplus"
+        aacplus" \
     && sudo -u opam sh -c "PKG_CONFIG_PATH=$PKG_CONFIG_PATH CFLAGS=-I/usr/local/include opam install -y liquidsoap=$LIQUIDSOAP_VERSION" \
     && rm -rf /usr/local/src \
     && for dir in sbin bin doc etc lib man share; do \
