@@ -1,4 +1,4 @@
 # docker-liquidsoap
 Docker build liquidsoap
 
-On alpine using opam
+Minimal docker build liquidsoap on alpine using opam
