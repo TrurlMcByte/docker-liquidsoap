@@ -165,6 +165,7 @@ RUN cp /etc/apk/repositories /etc/apk/repositories.orig \
     && apk del .build-deps \
     && mv -f /etc/apk/repositories.orig /etc/apk/repositories \
     && rm -f /etc/apk/keys/anil@recoil.org-5687cc79.rsa.pub \
+    && rm -fr /home/opam/.opam/log/* /home/opam/.opam/packages.dev/* /home/opam/.opam/system/packages.dev/* \
     && install -o opam -d /var/run/liquidsoap
 
 USER opam
