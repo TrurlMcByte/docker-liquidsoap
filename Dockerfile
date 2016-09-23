@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:latest
 
 RUN apk add --no-cache \
         wget \
@@ -7,7 +7,7 @@ RUN apk add --no-cache \
 
 ADD aspcud /usr/bin/aspcud
 
-ENV LIQUIDSOAP_VERSION=1.2.0
+ENV LIQUIDSOAP_VERSION=1.2.1
 
 RUN cp /etc/apk/repositories /etc/apk/repositories.orig \
     && echo http://www.cl.cam.ac.uk/~avsm2/alpine-ocaml/ >> /etc/apk/repositories \
@@ -27,7 +27,7 @@ RUN cp /etc/apk/repositories /etc/apk/repositories.orig \
         camlp4 \
         cmake \
         curl-dev \
-        dssi-dev \
+#        dssi-dev \
         faad2-dev \
         fdk-aac-dev \
         ffmpeg-dev \
@@ -43,10 +43,10 @@ RUN cp /etc/apk/repositories /etc/apk/repositories.orig \
         gst-plugins-base1-dev \
         gstreamer1-dev \
         jack-dev \
-        ladspa-dev \
+#        ladspa-dev \
         lame-dev \
         libao-dev \
-        liblo-dev \
+#        liblo-dev \
         libmad-dev \
         libogg-dev \
         liboil-dev \
@@ -64,7 +64,7 @@ RUN cp /etc/apk/repositories /etc/apk/repositories.orig \
         patch \
         pcre-dev \
         portaudio-dev \
-        pulseaudio-dev \
+#        pulseaudio-dev \
         rsync \
         soundtouch-dev \
         speex-dev \
@@ -118,22 +118,21 @@ RUN cp /etc/apk/repositories /etc/apk/repositories.orig \
         bjack \
         cry \
         cry \
-        dssi \
-        dssi \
+#        dssi \
         faad \
         fdkaac \
         ffmpeg \
         flac \
         inotify \
-        ladspa \
+#        ladspa \
         lame \
-        lastfm \
-        lo \
+#        lastfm \
+#        lo \
         mad \
         ogg \
         opus \
         portaudio \
-        pulseaudio \
+#        pulseaudio \
         samplerate \
         soundtouch \
         speex \
