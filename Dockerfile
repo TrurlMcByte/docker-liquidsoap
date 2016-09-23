@@ -30,7 +30,7 @@ RUN cp /etc/apk/repositories /etc/apk/repositories.orig \
 #        dssi-dev \
         faad2-dev \
         fdk-aac-dev \
-        ffmpeg-dev \
+#        ffmpeg-dev \
         fftw-dev \
         file \
         flac-dev \
@@ -121,7 +121,7 @@ RUN cp /etc/apk/repositories /etc/apk/repositories.orig \
 #        dssi \
         faad \
         fdkaac \
-        ffmpeg \
+#        ffmpeg \
         flac \
         inotify \
 #        ladspa \
